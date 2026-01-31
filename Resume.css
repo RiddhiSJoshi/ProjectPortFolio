@@ -1,0 +1,64 @@
+.topbar{
+    margin-left: 100px;
+    display: flex;
+    justify-content:space-around;
+    color:aliceblue;
+}
+.page{
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.welc{
+    color: white;
+}
+.summary-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0;
+}
+.summary-text{
+    width: 65%;
+}
+.summa{
+    color:whitesmoke;
+    margin-right:40px;
+    margin-left: 25px;
+}
+.exp{
+    color: whitesmoke;
+    margin:25px;
+}
+.summary-image{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+.dev{
+    height:40vh;
+    width:180px;
+    margin-left: 80px;
+    border-radius: 12px;
+}
+.skil{
+    color: whitesmoke;
+    margin:25px;
+}
+.proj{
+    color: whitesmoke;
+    margin:25px;
+}
+@media (max-width: 600px) {
+    .summary-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .summary-text,
+    .summary-image {
+        width: 100%;
+    }
+}
