@@ -1,64 +1,148 @@
-.topbar{
-    margin-left: 100px;
-    display: flex;
-    justify-content:space-around;
-    color:aliceblue;
+* {
+    box-sizing: border-box;
 }
-.page{
-    background-color: black;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    min-height: 100vh;
+    background-image: url("./Images/Background image.png");
     background-size: cover;
-    height: 100vh;
-    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
 }
-.welc{
-    color: white;
+
+/* Navigation */
+
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    padding: 25px 60px;
+    color:navy;
 }
-.summary-container{
+
+.topbar h2 {
+    cursor: pointer;
+}
+
+/* Welcome */
+
+.welc {
+    color:lavender;
+    margin: 50px 25px 30px;
+}
+
+/* Summary */
+
+.summary-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 40px;
-    padding: 40px 0;
+    padding: 30px 50px;
 }
-.summary-text{
+
+.summary-text {
     width: 65%;
 }
-.summa{
-    color:whitesmoke;
-    margin-right:40px;
-    margin-left: 25px;
+
+.summa {
+    color: indigo;
+    margin-bottom: 20px;
 }
-.exp{
-    color: whitesmoke;
-    margin:25px;
+
+.exp {
+    color: aqua;
+    line-height: 1.7;
+    margin: 0;
 }
-.summary-image{
+
+.summary-image {
     width: 35%;
     display: flex;
     justify-content: center;
 }
-.dev{
-    height:40vh;
-    width:180px;
-    margin-left: 80px;
+
+.dev {
+    width: 180px;
+    height: 40vh;
+    object-fit: cover;
     border-radius: 12px;
 }
-.skil{
-    color: whitesmoke;
-    margin:25px;
+
+/* Skills */
+
+.skil {
+    color: aqua;
+    margin: 30px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
-.proj{
-    color: whitesmoke;
-    margin:25px;
+
+.skil h2:first-child {
+    width: 100%;
+    color: indigo;
 }
+
+/* Projects */
+
+.proj {
+    color: indigo;
+    margin: 40px 25px;
+}
+
+.proj-one {
+    color:aqua;
+    margin: 15px 25px;
+}
+
+.one-para {
+    color:aqua;
+    margin: 15px 20px;
+}
+
+/* Mobile */
+
 @media (max-width: 600px) {
+
+    .topbar {
+        justify-content: center;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .welc {
+        text-align: center;
+        margin-top: 30px;
+    }
+
     .summary-container {
         flex-direction: column;
+        padding: 20px;
         text-align: center;
     }
 
     .summary-text,
     .summary-image {
         width: 100%;
+    }
+
+    .dev {
+        width: 180px;
+        height: auto;
+    }
+
+    .skil {
+        justify-content: center;
+    }
+
+    .skil h2:first-child {
+        width: 100%;
+        text-align: center;
     }
 }
